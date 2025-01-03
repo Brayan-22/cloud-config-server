@@ -3,15 +3,15 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://eureka-server:8761/eureka
+      defaultZone: http://localhost:8761/eureka
   instance:
     hostname: localhost
 microservice:
     payment-service:
         endpoints:
             endpoint:
-                uri: http://payment-service:9091/payment
+                uri: http://localhost:9091/payment
     order-service:
         endpoints:
             endpoint:
-                uri: http://order-service:9092/order
+                uri: http://localhost:9092/order
