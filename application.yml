@@ -10,7 +10,7 @@ microservice:
     payment-service:
         endpoints:
             endpoint:
-                uri: http://localhost:9091/payment
+                uri: http://payment-service:9091/payment
     order-service:
         endpoints:
             endpoint:
